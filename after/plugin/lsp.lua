@@ -5,7 +5,12 @@ lsp.preset('recommended')
 
 lsp.ensure_installed({
     'clangd',
+    'rust_analyzer',
 })
+
+-- skip rust_analyzer, leave to rust tools
+lsp.skip_server_setup({'rust_analyzer'})
+
 -- Fix Undefined global 'vim'
 lsp.configure('sumneko_lua', {
     settings = {
@@ -31,4 +36,5 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
+
 lsp.setup()
