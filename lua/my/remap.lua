@@ -12,4 +12,5 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 
-
+-- bind <leader>s to /
+vim.keymap.set("n", "<leader>s", [[/]])

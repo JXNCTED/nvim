@@ -1,5 +1,5 @@
 function ColorMyPencils(color)
-	color = color or "monokai"
+	color = color or "gruvbox"
 	vim.cmd.colorscheme(color)
 
 	vim.api.nvim_set_hl(0, "Normal", {bg = "none" })
@@ -8,3 +8,6 @@ function ColorMyPencils(color)
 end
 
 ColorMyPencils()
+
+vim.o.background = "dark" -- or "light" for light mode
+vim.cmd([[colorscheme gruvbox]])

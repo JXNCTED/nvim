@@ -131,6 +131,11 @@ _G.packer_plugins = {
     path = "/home/ed/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["gruvbox.nvim"] = {
+    loaded = true,
+    path = "/home/ed/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/ed/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -152,11 +157,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ed/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
-  },
-  ["monokai.nvim"] = {
-    loaded = true,
-    path = "/home/ed/.local/share/nvim/site/pack/packer/start/monokai.nvim",
-    url = "https://github.com/tanvirtin/monokai.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
