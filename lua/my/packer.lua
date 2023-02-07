@@ -61,6 +61,25 @@ return require('packer').startup(function(use)
         },
         tag = 'nightly' -- optional, updated every week. (see issue #1193)
     }
+    -- use 'feline-nvim/feline.nvim'
+    use {
+        'feline-nvim/feline.nvim',
+        require('feline').setup()
+    }
 
     use 'DanilaMihailov/beacon.nvim'
+
+    use {
+	    'lewis6991/gitsigns.nvim',
+	    config = function()
+		    require('gitsigns').setup()
+	    end
+    }
+    -- install without yarn or npm
+    -- use({
+    --     "iamcco/markdown-preview.nvim",
+    --     run = function() vim.fn["mkdp#util#install"]() end,
+    -- })
+
+    use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 end)
