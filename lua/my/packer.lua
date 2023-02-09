@@ -79,4 +79,15 @@ return require('packer').startup(function(use)
     -- })
 
     use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+    use {
+        "folke/trouble.nvim",
+        requires = "nvim-tree/nvim-web-devicons",
+        config = function()
+            require("trouble").setup {
+                -- config
+            }
+        end
+    }
+
+    use "jose-elias-alvarez/null-ls.nvim"
 end)
