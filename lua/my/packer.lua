@@ -58,11 +58,11 @@ return require('packer').startup(function(use)
         },
         tag = 'nightly' -- optional, updated every week. (see issue #1193)
     }
-    -- use 'feline-nvim/feline.nvim'
-    use {
-        'feline-nvim/feline.nvim',
-        require('feline').setup()
-    }
+    use 'feline-nvim/feline.nvim'
+    -- use {
+    --     'feline-nvim/feline.nvim',
+    --     require('feline').setup()
+    -- }
 
     use 'DanilaMihailov/beacon.nvim'
 
