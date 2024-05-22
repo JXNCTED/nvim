@@ -5,3 +5,4 @@
 local opt = vim.opt
 
 opt.background = "dark"
+vim.cmd("set nohlsearch")
