@@ -7,6 +7,7 @@ return {
         require("notify").setup({
             stages = "static",
             render = "compact",
+            top_down = false,
         })
     end,
 }
