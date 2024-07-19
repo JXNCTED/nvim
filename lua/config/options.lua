@@ -7,3 +7,9 @@ local opt = vim.opt
 opt.background = "dark"
 vim.cmd("set nohlsearch")
 vim.cmd("set nomodeline")
+
+-- add file types
+vim.cmd("au BufNewFile,BufRead *.launch set ft=xml")
+
+opt.winblend = 5
+opt.pumblend = 5
