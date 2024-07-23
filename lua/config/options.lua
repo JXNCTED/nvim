@@ -11,5 +11,5 @@ vim.cmd("set nomodeline")
 -- add file types
 vim.cmd("au BufNewFile,BufRead *.launch set ft=xml")
 
-opt.winblend = 5
-opt.pumblend = 5
+opt.winblend = 20
+opt.pumblend = 20
