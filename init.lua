@@ -7,4 +7,5 @@ if vim.g.neovide then
     vim.g.neovide_cursor_vfx_mode = "railgun"
     vim.g.neovide_refresh_rate = 93
     vim.g.neovide_fullscreen = false
+    vim.o.guifont = "DejaVuSansM Nerd Font:h10"
 end

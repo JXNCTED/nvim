@@ -9,3 +9,6 @@ vim.keymap.set(
     ":let g:neovide_fullscreen = !g:neovide_fullscreen<CR>",
     { noremap = true, silent = true }
 )
+
+-- typst preview
+vim.keymap.set("n", "<leader>tp", ":TypstPreview<CR>", { noremap = true, silent = true })
