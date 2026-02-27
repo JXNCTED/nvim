@@ -1,8 +1,9 @@
 return {
+  { "Shatur/neovim-ayu" },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = function() end, -- Disable LazyVim's colorscheme
+      colorscheme = "ayu",
     },
   },
 }
