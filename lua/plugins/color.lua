@@ -1,9 +1,11 @@
 return {
-  { "Shatur/neovim-ayu" },
+  -- { "Shatur/neovim-ayu" },
+  { "rebelot/kanagawa.nvim" },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "ayu",
+      -- colorscheme = "ayu",
+      colorscheme = "kanagawa",
     },
   },
 }
